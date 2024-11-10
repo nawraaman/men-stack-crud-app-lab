@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dog Details</title>
+  </head>
+  <body>
+    <h1><%= dog.name %></h1>
+    <p>Age: <%= dog.age %></p>
+    <p><%= dog.isFriendly ? "Friendly" : "Not Friendly" %></p>
+    <a href="/dogs/<%= dog._id %>/edit">Edit</a>
+    <form action="/dogs/<%= dog._id %>?_method=DELETE" method="POST">
+      <button type="submit">Delete</button>
+    </form>
+  </body>
+</html>
