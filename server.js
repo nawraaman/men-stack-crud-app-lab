@@ -22,5 +22,5 @@ app.use(morgan('dev'))
 app.use(dogRoute)
 
 app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`)
+  console.log(`Server running `)
 })
